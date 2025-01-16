@@ -1,0 +1,30 @@
+theme = "nightfox"
+# nightfox is the ogs
+
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+
+[editor.auto-pairs]
+'"' = '"'
+'<' = '>'
+"'" = "'"
+
+[editor.indent-guides]
+render = true
+character = "|"
+skip-levels = 1
+
+[keys.normal]
+j = "move_line_up"
+k = "move_line_down"
+
+[keys.normal.space.w]
+j = "jump_view_up"
+k = "jump_view_down"
+9 = "@%d<space>P%sPySide2<ret><esc>d<ins><ins>"
+
+[keys.select]
+j = "extend_line_up"
+k = "extend_line_down"
