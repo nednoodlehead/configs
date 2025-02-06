@@ -1,6 +1,6 @@
-theme = "nightfox"
-# nightfox is the ogs
 
+theme = "nightfox"
+# nightfox is the goat
 
 [editor.cursor-shape]
 insert = "bar"
@@ -8,13 +8,15 @@ select = "underline"
 
 [editor.auto-pairs]
 '"' = '"'
+# need to exclude single pairs string for the f-string bind...
 '<' = '>'
-"'" = "'"
+'(' = ')'
+'[' = ']'
+'{' = '}'
 
 [editor.indent-guides]
 render = true
 character = "|"
-skip-levels = 1
 
 [keys.normal]
 j = "move_line_up"
@@ -23,7 +25,12 @@ k = "move_line_down"
 [keys.normal.space.w]
 j = "jump_view_up"
 k = "jump_view_down"
-9 = "@%d<space>P%sPySide2<ret><esc>d<ins><ins>"
+
+[keys.normal.space.q] # custom menu?
+# this is for replacing 'PySide2' with 'PyQt5' when using qt designer
+w = "@%d<space>P%sPySide2<ret><esc>d"
+# for quickly creating a python f-string. issues/4035 my goat.
+e = "@if''<esc>hi"
 
 [keys.select]
 j = "extend_line_up"
