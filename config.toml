@@ -2,6 +2,9 @@
 theme = "nightfox"
 # nightfox is the goat
 
+[editor]
+continue-comments = false
+
 [editor.cursor-shape]
 insert = "bar"
 select = "underline"
