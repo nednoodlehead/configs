@@ -24,6 +24,8 @@ character = "|"
 [keys.normal]
 j = "move_line_up"
 k = "move_line_down"
+C-j = "page_cursor_half_up"
+C-k = "page_cursor_half_down"
 
 [keys.normal.space.w]
 j = "jump_view_up"
