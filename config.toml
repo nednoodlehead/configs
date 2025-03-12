@@ -33,7 +33,7 @@ k = "jump_view_down"
 
 [keys.normal.space.q] # custom menu?
 # this is for replacing 'PySide2' with 'PyQt5' when using qt designer
-w = "@%d<space>P%sPySide2<ret><esc>d"
+w = "@%d<space>P%sPySide2<ret><esc>diPyQt5"
 # for quickly creating a python f-string. issues/4035 my goat.
 e = "@if''<esc>hi"
 
